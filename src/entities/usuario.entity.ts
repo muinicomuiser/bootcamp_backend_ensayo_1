@@ -13,10 +13,3 @@ export class Usuario{
         public generosFavoritos: string
     ){}
 }
-
-
-
-
-
-
-
