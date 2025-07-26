@@ -1,0 +1,11 @@
+Algunos cambios en el desarrollo, con respecto a lo que se hizo en la ayudantía.
+
+Clase Usuario:
+
+    - Cambio del tipo de planSuscripcion a string, para que al crear un nuevo usuario, 
+    baste con indicar el nombre del plan en el body, y no tener que definirlo completo
+
+Módulo Usuario
+
+    - 4.2.3.2: Como se cambió la propiedad de planSuscripcion de la clase Usuario, ahora
+    en el Service se puede validar directamente usando if(usuario.planSuscripcion === "Plan premium")
