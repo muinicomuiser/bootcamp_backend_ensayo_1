@@ -1,3 +1,7 @@
+<p align="left">
+  <img src="P06.png"  height="350" alt="ENSAYO EVALUACIÓN - CINEBACK"/>
+</p>
+
 # Desarrollo de ensayo de evaluación N° 1 - "CineBack"
 
 Una forma de resolver el ensayo para la primera evaluación del Bootcamp Backend de DCC U. Chile, versión 2025.    
@@ -12,8 +16,8 @@ Una forma de resolver el ensayo para la primera evaluación del Bootcamp Backend
 
 ## Escenario
 
-El auge del streaming ha revolucionado la forma en que consumimos entretenimiento. Las plataformas de streaming de películas y series se han convertido en la opción preferida por millones de usuarios en todo el mundo. En este escenario competitivo, la empresa "CineBack" busca posicionarse como una plataforma líder, ofreciendo una experiencia de streaming de alta calidad, un catálogo amplio y atractivo, y un sistema de recomendación personalizado.    
-CineBack necesita desarrollar una plataforma web de streaming de películas que permita a los usuarios acceder a un amplio catálogo de películas, crear listas de reproducción, visualizar contenido en alta definición, y disfrutar de una experiencia personalizada.
+*_El auge del streaming ha revolucionado la forma en que consumimos entretenimiento. Las plataformas de streaming de películas y series se han convertido en la opción preferida por millones de usuarios en todo el mundo. En este escenario competitivo, la empresa "CineBack" busca posicionarse como una plataforma líder, ofreciendo una experiencia de streaming de alta calidad, un catálogo amplio y atractivo, y un sistema de recomendación personalizado.    
+CineBack necesita desarrollar una plataforma web de streaming de películas que permita a los usuarios acceder a un amplio catálogo de películas, crear listas de reproducción, visualizar contenido en alta definición, y disfrutar de una experiencia personalizada._*
 
 ## Estre proyecto usa NestJS
 
