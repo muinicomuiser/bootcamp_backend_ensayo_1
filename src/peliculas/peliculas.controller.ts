@@ -35,4 +35,14 @@ export class PeliculasController {
   obtenerPeliculas(@Query('genero') genero?: string): Pelicula[] {
     return this.appService.findPeliculas(genero);
   }
+
+  ///////////////////////////////////////////////////
+  /// 5. Módulo Sugerencia de Películas (desafío) ///
+  ///////////////////////////////////////////////////
+
+  // 5.1.1: Sugerir películas a usuario
+  @Get('sugerencias/:idUsuario')
+  sugerirPeliculas(@Param('idUsuario') idUsuario: string): Pelicula[] {
+    return this.appService.sugerirPeliculas(Number(idUsuario));
+  }
 }

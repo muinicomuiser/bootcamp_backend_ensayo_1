@@ -2,10 +2,16 @@ Algunos cambios en el desarrollo, con respecto a lo que se hizo en la ayudantía
 
 Clase Usuario:
 
-    - Cambio del tipo de planSuscripcion a string, para que al crear un nuevo usuario, 
-    baste con indicar el nombre del plan en el body, y no tener que definirlo completo
+    - Cambio del tipo de planSuscripcion a string, 
+    que tendrá solo el nombre del plan de suscripción del usuario, 
+    para que al crear un nuevo usuario baste con indicar el nombre 
+    del plan en el body, y no tener que definir el plan completo.
+
+    - Corrección: En la ayudantía faltó definir que la propiedad 
+    "generosFavoritos" es un array de string (string[])
 
 Módulo Usuario
 
-    - 4.2.3.2: Como se cambió la propiedad de planSuscripcion de la clase Usuario, ahora
-    en el Service se puede validar directamente usando if(usuario.planSuscripcion === "Plan premium")
+    - 4.2.3.2: Como se cambió la propiedad de planSuscripcion de 
+    la clase Usuario, ahora en el Service se puede validar directamente 
+    usando if(usuario.planSuscripcion === "Plan premium")

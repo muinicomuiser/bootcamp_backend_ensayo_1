@@ -11,7 +11,7 @@ import { Usuario } from './entities/usuario.entity';
 
 @Injectable()
 export class AppService {
-
+  
   /** Planes iniciales */
   planesSuscripcion: PlanSuscripcion[] = [
     new PlanSuscripcion(1, 'Plan básico', 3000, '720p', true),
@@ -116,7 +116,7 @@ export class AppService {
     return this.planesSuscripcion;
   }
 
-  
+
   ///////////////////////////
   /// 3: MÓDULO PELÍCULAS ///
   ///////////////////////////
@@ -232,5 +232,31 @@ export class AppService {
 
     usuario.historialVisualizaciones.push(nuevaReproduccion);
     return;
+  }
+
+
+  ///////////////////////////////////////////////////
+  /// 5: MÓDULO SUGERENCIA DE PELÍCULAS (DESAFÍO) ///
+  ///////////////////////////////////////////////////
+
+  // 5.2.1: Sugerir películas por usuario
+  sugerirPeliculas(idUsuario: number): Pelicula[] {
+    // 5.2.1.1: Validar que el usuario exista
+    // Se puede reutilizar el método para buscar usuario.
+    // Además, si dentro del método de buscar usuario ya están manejando el error para usuario no encontrado,
+    // no haría falta volver a manejarlo acá.
+    const usuario: Usuario | undefined = this.findUsuarioById(idUsuario);
+    if (!usuario) {
+      throw new NotFoundException('Usuario no encontrado');
+    }
+
+    // 5.2.1.2: Obtener todas las peliculas que coincidan con los generosFavoritos del usuario. 
+    // Una opción es usar un filtro y comprobar para cada película si su género está
+    // incluido dentro de los géneros favoritos del usuario (usuario.generosFavoritos.includes(pelicula.genero))
+    const peliculasRecomendadas: Pelicula[] = this.peliculas.filter(
+      (pelicula) => usuario.generosFavoritos.includes(pelicula.genero),
+    );
+
+    return peliculasRecomendadas
   }
 }
